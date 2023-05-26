@@ -12,7 +12,7 @@ jobs:
       - image: ubuntu:20.04
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
+    steps: 
       - checkout
       - run:
           name: Install NodeJS and nexploit-cli
