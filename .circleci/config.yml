@@ -57,4 +57,4 @@ jobs:
 workflows:
   run-scan-workflow:
     jobs:
-      - run-scan
+      - run-scan 
