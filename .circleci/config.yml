@@ -46,6 +46,10 @@ jobs:
             --timeout 10m                         \
             --token $NEXPLOIT_TOKEN               \
             --breakpoint high_issue ${SCAN_ID}
+      - run:
+          name: Stop Scan on Failure
+          command: nexploit-cli scan:stop --token $BRIGHTSEC_TOKEN $SCAN_ID
+          when: on_fail
           
             
 # Invoke jobs via workflows
