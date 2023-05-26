@@ -46,11 +46,7 @@ jobs:
             --timeout 10m                         \
             --token $NEXPLOIT_TOKEN               \
             --breakpoint high_issue ${SCAN_ID}
-      - run:
-          name: Stop Scan on Failure
-          command: nexploit-cli scan:stop --token $NEXPLOIT_TOKEN $SCAN_ID
-          when: on_fail
-          
+        
             
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
